@@ -16,8 +16,6 @@ builder.Services.AddScoped<IPaymentGateway, PayPalGateway>();
 
 builder.Services.AddScoped<IPaymentGateway, StripeGateway>();
 
-builder.Services.AddScoped<OrderService, OrderService>();
-
 builder.Services.AddSingleton<OrderService>();
 
 builder.Services.AddSingleton<UserService>();
